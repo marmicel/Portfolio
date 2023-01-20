@@ -1,0 +1,409 @@
+.digger-container {
+  position: relative;
+  width: 1440px;
+  height: 1000px;
+  background: inherit;
+  scale: 0.15;
+  margin: -400px 0 0 -30px;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.machine-body {
+  position: absolute;
+  width: 500px;
+  height: 225px;
+  background: inherit;
+  bottom: 280px;
+  left: 35px;
+  border-top-right-radius: 100px 250px;
+  border-top-left-radius: 400px 115px;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+  animation-name: engine-vibration;
+  animation-fill-mode: forwards;
+}
+
+@keyframes engine-vibration {
+  0% {
+    left: 35px;
+    bottom: 280px;
+  }
+
+  50% {
+    left: 37px;
+    bottom: 278px;
+  }
+
+  100% {
+    left: 35px;
+    bottom: 280px;
+  }
+}
+
+.machine-track {
+  position: absolute;
+  width: 580px;
+  height: 130px;
+  background: inherit;
+  bottom: 150px;
+}
+
+.footing {
+  width: 540px;
+  height: 60px;
+  border: 20px solid black;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  border-radius: 50px/ 50px;
+  background: inherit;
+}
+
+.inside-track {
+  width: 450px;
+  height: 50px;
+  top: 525px;
+  position: absolute;
+  left: 270px;
+  border-radius: 40%;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  background: black;
+  bottom: 35px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.dot-left {
+  left: 40px;
+}
+
+.dot-rigth {
+  left: 510px;
+}
+
+.line {
+  width: 400px;
+  height: 30px;
+  background: black;
+  bottom: 35px;
+  position: absolute;
+  left: 90px;
+  border-radius: 15px/15px;
+}
+
+.hip {
+  width: 200px;
+  height: 30px;
+  background: black;
+  bottom: 100px;
+  position: absolute;
+  left: 125px;
+}
+
+.engine {
+  width: 280px;
+  height: 80px;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  border: 20px solid black;
+  border-radius: 30px;
+  font-size: 60px;
+  padding: 30px 10px 30px 10px;
+  text-align: center;
+  background: #ff3e00;
+}
+
+.cabin-left {
+  width: 180px;
+  height: 200px;
+  bottom: 0px;
+  position: absolute;
+  left: 255px;
+  border-top: 20px solid black;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-left: 20px solid black;
+  border-bottom: 20px solid black;
+}
+
+.cabin-window-front {
+  width: 20px;
+  height: 150px;
+  background: black;
+  position: absolute;
+  left: 457px;
+  bottom: 80px;
+  transform: rotate(-20deg);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 12px;
+}
+
+.cabin-bottom-left {
+  width: 20px;
+  height: 85px;
+  background: black;
+  position: absolute;
+  left: 480px;
+  bottom: 15px;
+  border-top-right-radius: 10px;
+}
+
+.cabin-bottom {
+  width: 84px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  left: 415px;
+  bottom: 0px;
+  border-bottom-right-radius: 10px;
+}
+
+.inside-cabin {
+  width: 20px;
+  height: 170px;
+  background: black;
+  position: absolute;
+  left: 335px;
+  bottom: 60px;
+  transform: rotate(-14deg);
+  border-top-left-radius: 10px;
+}
+
+.inside-cabin-bottom {
+  width: 130px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  left: 355px;
+  bottom: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 25px;
+}
+.arm {
+  position: absolute;
+  width: 800px;
+  height: 680px;
+  background: inherit;
+  left: 385px;
+  bottom: 150px;
+  transform: rotate(-20deg);
+  transform-origin: 25px 470px;
+  animation-duration: 4s;
+  animation-name: dig-arm;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+@keyframes dig-arm {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.hook {
+  position: absolute;
+  width: 235px;
+  height: 600px;
+  background: inherit;
+  left: 420px;
+  bottom: 75px;
+  transform: rotate(20deg);
+  transform-origin: 50px 45px;
+  animation-duration: 4s;
+  animation-name: dig-hook;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  border-top-right-radius: 90px;
+}
+
+@keyframes dig-hook {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  25% {
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.bucket {
+  position: absolute;
+  width: 0px;
+  height: 150px;
+  left: 0px;
+  bottom: 0px;
+  transform: rotate(40deg);
+  transform-origin: 200px 25px;
+  background: inherit;
+  animation-duration: 4s;
+  animation-name: dig-bucket;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dig-bucket {
+  0% {
+    transform: rotate(40deg);
+  }
+
+  25% {
+    transform: rotate(-50deg);
+  }
+  75% {
+    transform: rotate(50deg);
+  }
+
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.arm-pt1-left {
+  width: 20px;
+  height: 180px;
+  background: black;
+  position: absolute;
+  left: 30px;
+  bottom: -190px;
+  transform: rotate(20deg);
+  border-top-left-radius: 10px;
+}
+
+.arm-pt2-left {
+  width: 20px;
+  height: 430px;
+  background: black;
+  position: absolute;
+  left: 243px;
+  bottom: -150px;
+  transform: rotate(65deg);
+  border-bottom-left-radius: 15px;
+}
+
+.arm-circle {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: transparent;
+  left: 418px;
+  bottom: 70px;
+  border-radius: 50%;
+  border: 20px solid black;
+}
+
+.arm-pt1-right {
+  width: 20px;
+  height: 185px;
+  background: black;
+  position: absolute;
+  left: 133px;
+  bottom: -233px;
+  transform: rotate(20deg);
+  border-top-left-radius: 10px;
+}
+
+.arm-pt2-right {
+  width: 20px;
+  height: 350px;
+  background: black;
+  position: absolute;
+  left: 318px;
+  bottom: -165px;
+  transform: rotate(65deg);
+  border-radius: 5px;
+}
+
+.shoulder {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  background: inherit;
+  left: 0px;
+  bottom: 510px;
+  transform: rotate(0deg);
+  transform-origin: 10% 50%;
+  border-bottom-right-radius: 470px 120px;
+}
+
+.hook-pt1-right {
+  width: 20px;
+  height: 480px;
+  background: black;
+  position: absolute;
+  left: 135px;
+  bottom: 107px;
+  transform: rotate(-15deg);
+  border-radius: 10px;
+}
+
+.hook-pt1-left {
+  width: 20px;
+  height: 520px;
+  background: black;
+  position: absolute;
+  left: 100px;
+  bottom: 35px;
+  transform: rotate(-22deg);
+  border-radius: 10px;
+}
+
+.diagonal {
+  position: absolute;
+  width: 20px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  left: 130px;
+  bottom: -40px;
+}
+
+.bucket-paint {
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  left: 160px;
+  bottom: -30px;
+  background: inherit;
+  transform: rotate(45deg);
+  border-radius: 40px;
+}
+
+.bottom {
+  position: absolute;
+  width: 190px;
+  height: 20px;
+  bottom: -20px;
+  left: 25px;
+  background: black;
+  border-radius: 10px;
+}
+
+.right {
+  position: absolute;
+  width: 20px;
+  height: 150px;
+  bottom: -20px;
+  left: 195px;
+  background: black;
+  border-radius: 10px;
+}

@@ -1,0 +1,41 @@
+nav > ul {
+  display: flex;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+
+.Link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background: #424242;
+}
+
+.Background-active {
+  background-color: #00bf8f;
+}
+
+.Hl-bar {
+  width: 100%;
+  height: 15px;
+}
+
+.Icon-container {
+  margin: 10px 0 5px 0;
+}
+
+.Color-active {
+  color: #00bf8f;
+}

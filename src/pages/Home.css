@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&display=swap");
+
+.Details {
+  font-family: "Shadows Into Light";
+  color: white;
+  margin: 0px;
+  padding: 10px 0px 110px 10px;
+  background: #00bf8f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+}
+
+.Details > h1 {
+  margin-bottom: 0px;
+}
+
+.Details > div {
+  font-size: 30px;
+}
+
+.Lower-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Coda Caption";
+  font-size: 25px;
+}
+
+.Lower-box > h3 {
+  align-self: baseline;
+  margin-left: 16px;
+}
+
+.Profile-img {
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 5px solid white;
+  max-width: 100%;
+  box-shadow: 5px 0px 10px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.Lower-experience {
+  font-size: 14px;
+}
+
+.Experience-row {
+  display: flex;
+  padding: 0px 10px;
+}
+
+.Experience-img {
+  object-fit: contain;
+}
+
+.Experience-description {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.Experience-description > p {
+  margin: 5px 0px;
+}
